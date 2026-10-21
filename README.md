@@ -8,8 +8,8 @@ A customer support chatbot for orders, delivery, returns, offers, gift cards and
 
 | Path | What it is |
 | --- | --- |
-| `Orders_Delivery_Returns_Knowledge_Base.docx` | Knowledge base 1: orders, delivery, tracking, damaged items, returns, refund timing (17 pages) |
-| `Offers_GiftCards_Rewards_Knowledge_Base.docx` | Knowledge base 2: coupons, sales, gift cards, Nestora Wallet, reward points, referrals (14 pages) |
+| `Orders_Delivery_Returns_Knowledge_Base_v1.1.docx` | Knowledge base 1: orders, delivery, tracking, damaged items, returns, refund timing and worked refund examples (18 pages) |
+| `Offers_GiftCards_Rewards_Knowledge_Base_v1.1.docx` | Knowledge base 2: coupons, sales, gift cards, Nestora Wallet, reward points, referrals (15 pages) |
 | `frontend/` | React + Vite help-centre page that embeds the Zia chat, with a Suggested questions button |
 
 ## How it works

@@ -12,6 +12,37 @@ export const QUESTION_GROUPS = [
     ],
   },
   {
+    topic: "Coupons & sales",
+    questions: [
+      "Is there a discount for new customers?",
+      "Can I use two coupons on one order?",
+      "My coupon isn't working. What should I check?",
+      "The price dropped after I ordered. Can I get the difference?",
+      "Can I return a Final Sale item?",
+    ],
+  },
+  {
+    topic: "Gift cards",
+    questions: [
+      "What gift card amounts can I buy?",
+      "How long is a gift card valid?",
+      "How do I use a gift card?",
+      "Can I return a gift card or get cash for it?",
+      "The gift card I sent hasn't arrived.",
+    ],
+  },
+  {
+    topic: "Wallet, points & referrals",
+    questions: [
+      "What's in my Nestora Wallet?",
+      "Can I move my Wallet balance to my bank?",
+      "How do I earn reward points?",
+      "How much is a reward point worth?",
+      "How do I become a Gold member?",
+      "How does Refer a Friend work?",
+    ],
+  },
+  {
     topic: "Delivery & tracking",
     questions: [
       "How long will delivery take?",
@@ -30,31 +61,14 @@ export const QUESTION_GROUPS = [
     ],
   },
   {
-    topic: "Returns & exchanges",
+    topic: "Returns & refunds",
     questions: [
       "How many days do I have to return a rug?",
       "Can I return a sofa because I don't like it?",
       "How do I return something?",
       "Can I exchange for a different colour?",
-    ],
-  },
-  {
-    topic: "Refunds",
-    questions: [
       "When will I get my refund for a return?",
       "I paid cash. How do I get my refund?",
-      "Is shipping refunded when I return?",
-    ],
-  },
-  {
-    topic: "Offers, gift cards & rewards",
-    questions: [
-      "Is there a discount for new customers?",
-      "Can I use two coupons on one order?",
-      "How long is a gift card valid?",
-      "Can I move my Wallet balance to my bank?",
-      "How do I earn reward points?",
-      "How does Refer a Friend work?",
     ],
   },
 ];

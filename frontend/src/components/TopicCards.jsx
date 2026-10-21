@@ -1,4 +1,4 @@
-import { BoxIcon, TruckIcon, AlertIcon, ReturnIcon, WalletIcon, ArrowIcon } from "./icons";
+import { BoxIcon, TruckIcon, AlertIcon, ReturnIcon, WalletIcon, GiftIcon, ArrowIcon } from "./icons";
 import { askZia } from "../utils/ziaChat";
 
 const TOPICS = [
@@ -7,6 +7,7 @@ const TOPICS = [
   { Icon: AlertIcon, tone: "amber", title: "Damaged or wrong item", text: "Report a problem within 48 hours with photos.", example: "My item arrived damaged. What should I do?" },
   { Icon: ReturnIcon, tone: "violet", title: "Returns & exchanges", text: "Return windows by category and how to start a return.", example: "How many days do I have to return a rug?" },
   { Icon: WalletIcon, tone: "rose", title: "Refund timing", text: "When your refund arrives after a return or cancellation.", example: "When will I get my refund for a return?" },
+  { Icon: GiftIcon, tone: "teal", title: "Offers, gift cards & rewards", text: "Coupons, gift cards, your Wallet, reward points and referrals.", example: "How do I earn reward points?" },
 ];
 
 export default function TopicCards() {

@@ -1,6 +1,6 @@
 # Nestora Order Assistant
 
-A customer support chatbot for orders, delivery and returns, built with **Zoho Zia Agent Studio**. It answers only from a knowledge base, and customers use it through a React web page.
+A customer support chatbot for orders, delivery, returns, offers, gift cards and rewards, built with **Zoho Zia Agent Studio**. It answers only from two knowledge bases, and customers use it through a React web page.
 
 > Nestora Home is a fictional store. All prices, timelines and contact details are sample values for testing.
 
@@ -8,7 +8,8 @@ A customer support chatbot for orders, delivery and returns, built with **Zoho Z
 
 | Path | What it is |
 | --- | --- |
-| `Orders_Delivery_Returns_Knowledge_Base.docx` | The knowledge base uploaded to the Zia agent (17 pages, 13 sections, FAQs and test questions) |
+| `Orders_Delivery_Returns_Knowledge_Base.docx` | Knowledge base 1: orders, delivery, tracking, damaged items, returns, refund timing (17 pages) |
+| `Offers_GiftCards_Rewards_Knowledge_Base.docx` | Knowledge base 2: coupons, sales, gift cards, Nestora Wallet, reward points, referrals (14 pages) |
 | `frontend/` | React + Vite help-centre page that embeds the Zia chat, with a Suggested questions button |
 
 ## How it works

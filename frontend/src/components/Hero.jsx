@@ -6,7 +6,7 @@ const POPULAR = [
   "Is shipping free on a ₹850 order?",
   "How do I return something?",
   "It says delivered but I didn't get it.",
-  "Can I pay cash on delivery?",
+  "Is there a discount for new customers?",
 ];
 
 export default function Hero() {
@@ -31,8 +31,8 @@ export default function Hero() {
             Order answers, <span className="hero-highlight">in seconds.</span>
           </h1>
           <p className="hero-lead">
-            Ask about delivery, tracking, returns, exchanges and refunds. Our assistant answers
-            only from Nestora's official order and returns policy, so you get the right answer, not a guess.
+            Ask about delivery, returns, refunds, coupons, gift cards and reward points. Our assistant
+            answers only from Nestora's official policies, so you get the right answer, not a guess.
           </p>
 
           <form className="ask-bar" onSubmit={submit} role="search">

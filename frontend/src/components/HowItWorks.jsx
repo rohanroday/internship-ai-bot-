@@ -2,7 +2,7 @@ import { ChatIcon, BookIcon, CheckIcon } from "./icons";
 
 const STEPS = [
   { Icon: ChatIcon, title: "Ask your question", text: "Type it in the chat, or tap a suggested question." },
-  { Icon: BookIcon, title: "It checks our policy", text: "The assistant searches Nestora's official order and returns policy." },
+  { Icon: BookIcon, title: "It checks our policy", text: "The assistant searches Nestora's official policies on orders, returns, offers and rewards." },
   { Icon: CheckIcon, title: "Get a clear answer", text: "A short, accurate reply, or the right human contact if it can't help." },
 ];
 

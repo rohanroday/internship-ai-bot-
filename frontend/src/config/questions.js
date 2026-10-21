@@ -1,5 +1,6 @@
 // Questions shown in the "Suggested questions" panel, grouped by topic.
-// All of them are answered by the Orders, Delivery & Returns knowledge base.
+// All of them are answered by the two knowledge bases:
+// Orders, Delivery & Returns, and Offers, Gift Cards & Rewards.
 export const QUESTION_GROUPS = [
   {
     topic: "Orders",
@@ -43,6 +44,17 @@ export const QUESTION_GROUPS = [
       "When will I get my refund for a return?",
       "I paid cash. How do I get my refund?",
       "Is shipping refunded when I return?",
+    ],
+  },
+  {
+    topic: "Offers, gift cards & rewards",
+    questions: [
+      "Is there a discount for new customers?",
+      "Can I use two coupons on one order?",
+      "How long is a gift card valid?",
+      "Can I move my Wallet balance to my bank?",
+      "How do I earn reward points?",
+      "How does Refer a Friend work?",
     ],
   },
 ];

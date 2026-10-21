@@ -18,6 +18,7 @@ export default function Footer() {
             <li><a href="#topics">Delivery & tracking</a></li>
             <li><a href="#topics">Returns & exchanges</a></li>
             <li><a href="#topics">Refund timing</a></li>
+            <li><a href="#topics">Offers & rewards</a></li>
           </ul>
         </div>
         <div>

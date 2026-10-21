@@ -22,6 +22,15 @@ async function waitFor(getEl, timeoutMs = 4000) {
   return null;
 }
 
+// Opens the chat window (if closed) and focuses its text box.
+export async function openZiaChat() {
+  const getInput = () => document.querySelector(SELECTORS.input);
+  if (!isVisible(getInput())) document.querySelector(SELECTORS.launcher)?.click();
+  const input = await waitFor(getInput);
+  input?.focus();
+  return Boolean(input);
+}
+
 export async function askZia(question) {
   const getInput = () => document.querySelector(SELECTORS.input);
 

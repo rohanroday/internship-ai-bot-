@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { QUESTION_GROUPS } from "../config/questions";
 import { askZia } from "../utils/ziaChat";
+import { SparkIcon } from "./icons";
 
 // Floating button that opens a list of questions. Clicking one sends it to the chat.
 export default function SuggestedQuestions() {
@@ -70,7 +71,7 @@ export default function SuggestedQuestions() {
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
       >
-        {open ? "✕ Close" : "💬 Suggested questions"}
+        {open ? <>✕ Close</> : <><SparkIcon size={18} /> Suggested questions</>}
       </button>
 
       {notice && <p className="sq-notice" role="status">{notice}</p>}

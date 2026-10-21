@@ -1,23 +1,30 @@
+import { BoxIcon, TruckIcon, AlertIcon, ReturnIcon, WalletIcon, ArrowIcon } from "./icons";
+import { askZia } from "../utils/ziaChat";
+
 const TOPICS = [
-  { icon: "📦", title: "Orders", text: "Place, change or cancel an order.", example: "Can I change my address?" },
-  { icon: "🚚", title: "Delivery & tracking", text: "Delivery times, charges and tracking.", example: "Is shipping free on ₹850?" },
-  { icon: "🛠️", title: "Damaged or wrong item", text: "Report a problem within 48 hours.", example: "My item arrived damaged." },
-  { icon: "↩️", title: "Returns & exchanges", text: "Return windows and how to return.", example: "How long to return a rug?" },
-  { icon: "💸", title: "Refund timing", text: "When refunds reach you after a return.", example: "When will my refund arrive?" },
+  { Icon: BoxIcon, tone: "green", title: "Orders", text: "Place, change or cancel an order, and cash on delivery.", example: "Can I change my delivery address?" },
+  { Icon: TruckIcon, tone: "blue", title: "Delivery & tracking", text: "Delivery times by city, charges, express and tracking.", example: "How long will delivery take?" },
+  { Icon: AlertIcon, tone: "amber", title: "Damaged or wrong item", text: "Report a problem within 48 hours with photos.", example: "My item arrived damaged. What should I do?" },
+  { Icon: ReturnIcon, tone: "violet", title: "Returns & exchanges", text: "Return windows by category and how to start a return.", example: "How many days do I have to return a rug?" },
+  { Icon: WalletIcon, tone: "rose", title: "Refund timing", text: "When your refund arrives after a return or cancellation.", example: "When will I get my refund for a return?" },
 ];
 
 export default function TopicCards() {
   return (
-    <section className="topics container">
-      <h2>What the assistant can help with</h2>
+    <section className="section container" id="topics">
+      <div className="section-head reveal">
+        <span className="kicker">Help topics</span>
+        <h2>What can the assistant help with?</h2>
+        <p>Pick a topic to ask its most common question. The answer opens in the chat.</p>
+      </div>
       <div className="topic-grid">
-        {TOPICS.map((t) => (
-          <article key={t.title} className="topic-card">
-            <span className="topic-icon" aria-hidden="true">{t.icon}</span>
-            <h3>{t.title}</h3>
-            <p>{t.text}</p>
-            <p className="topic-example">Try: “{t.example}”</p>
-          </article>
+        {TOPICS.map(({ Icon, tone, title, text, example }) => (
+          <button key={title} type="button" className={`topic-card tone-${tone} reveal`} onClick={() => askZia(example)}>
+            <span className="topic-icon"><Icon size={22} /></span>
+            <h3>{title}</h3>
+            <p>{text}</p>
+            <span className="topic-try">“{example}” <ArrowIcon size={14} /></span>
+          </button>
         ))}
       </div>
     </section>

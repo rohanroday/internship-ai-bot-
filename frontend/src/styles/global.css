@@ -1,0 +1,65 @@
+:root {
+  --brand: #1f5c4d;
+  --brand-light: #dcebe6;
+  --text: #1f2933;
+  --muted: #5b6770;
+  --bg: #f7f9f8;
+  --card: #ffffff;
+  --border: #e3e8e6;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3 { margin: 0 0 0.5rem; line-height: 1.25; }
+p { margin: 0 0 0.75rem; line-height: 1.55; }
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+.container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+/* Header */
+.header { background: var(--card); border-bottom: 1px solid var(--border); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: var(--brand); text-decoration: none; }
+.header-tag { font-size: 0.9rem; color: var(--muted); }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, var(--brand), #2f7d69); color: #fff; padding: 64px 0 56px; }
+.hero h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); }
+.hero p { max-width: 620px; opacity: 0.92; }
+.hero-hint { font-weight: 600; margin-top: 1rem; }
+
+/* Topics */
+.topics { padding: 48px 16px; }
+.topics h2 { font-size: 1.35rem; margin-bottom: 1.25rem; }
+.topic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+.topic-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.topic-icon { font-size: 1.6rem; display: block; margin-bottom: 8px; }
+.topic-card h3 { font-size: 1.05rem; }
+.topic-card p { color: var(--muted); font-size: 0.95rem; }
+.topic-example { font-style: italic; color: var(--brand) !important; margin-bottom: 0; }
+
+/* Footer */
+.footer { background: var(--card); border-top: 1px solid var(--border); padding: 24px 0; font-size: 0.95rem; }
+.footer-small { color: var(--muted); font-size: 0.85rem; margin: 0; }
+
+/* Chat status messages */
+.chat-status { position: fixed; right: 16px; bottom: 16px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 0.9rem; box-shadow: 0 4px 16px rgba(0,0,0,0.08); margin: 0; }
+.chat-status.error { border-color: #e5a3a3; color: #9b2c2c; }
+
+/* Suggested questions (bottom-left; the Zoho chat sits bottom-right) */
+.sq { position: fixed; left: 16px; bottom: 16px; z-index: 1000; }
+.sq-toggle { background: var(--brand); color: #fff; border: 0; border-radius: 999px; padding: 12px 18px; font: inherit; font-weight: 600; cursor: pointer; box-shadow: 0 6px 20px rgba(31, 92, 77, 0.3); }
+.sq-toggle:hover { background: #174a3e; }
+.sq-toggle:focus-visible, .sq-question:focus-visible { outline: 3px solid #8fc7b6; outline-offset: 2px; }
+.sq-panel { position: absolute; left: 0; bottom: 60px; width: min(340px, calc(100vw - 32px)); max-height: min(480px, calc(100vh - 120px)); display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14); overflow: hidden; }
+.sq-panel-head { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 2px; }
+.sq-panel-head span { color: var(--muted); font-size: 0.85rem; }
+.sq-list { overflow-y: auto; padding: 8px 12px 12px; }
+.sq-group h4 { margin: 12px 4px 6px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.sq-question { display: block; width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 9px 12px; margin-bottom: 6px; font: inherit; font-size: 0.92rem; color: var(--text); cursor: pointer; }
+.sq-question:hover { background: var(--brand-light); border-color: #b7d3ca; }
+.sq-notice { position: absolute; left: 0; bottom: 60px; white-space: nowrap; background: var(--text); color: #fff; padding: 8px 12px; border-radius: 8px; font-size: 0.85rem; margin: 0; }
